@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let kode = 12307678910// 11 digit angka
+        let g;
+        let dd;
+        let mm;
+        let yyyy;
+        let nn;
+        
+        g = Math.floor(kode / 10000000000);
+        dd = Math.floor((kode / 100000000) % 100);
+        mm = Math.floor((kode / 1000000) % 100);
+        yyyy = Math.floor((kode / 100) % 10000)
+        nn = Math.floor(kode % 100)
+
+        switch(mm){
+            case 1 :
+                console.log("January")
+                break;
+            case 2 :
+                console.log("February")
+                break;
+            case 3 :
+                console.log("March")
+                break;
+            case 4 :
+                console.log("April")
+                break;
+            default :
+                console.log("Bulan Tidak Valid")
+                break;
+
+            }
+            console.log(g);
+            console.log(dd);
+            console.log(yyyy)
+            console.log(nn)
+
+    </script>
+</body>
+</html>
